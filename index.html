@@ -1,0 +1,577 @@
+<doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<body>
+	<div class="Navigation">
+		<nav>
+        <ul>
+            <li><a href="About.html" target="_self">About</a></li>
+            <li><a href="Resume.html" target="_self">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/vaishnavi-jarimalli-2137b4188/" target="_self">LinkedIn</a></li>
+        </ul>
+    </nav>
+	</div>
+
+	<!-------------------Introduction---------------------->
+	<div class="Introduction-container">
+		<section class="Introduction">
+		<h1><i style="color: #FB7026;">Hello,</i> I'm Vaishnavi Jarimalli</h1>
+		<h2> Crafting Seamless Experiences That Delight Users <br> and Adds Value</h2>
+	</section>
+	</div>
+
+	<!-----------------Work Cards----------------------------------->
+	<div class="work-container">
+		<section class="work">
+		<h2>My Work</h2><br>
+		<!----------------First project card--------------------------->
+		<div class="card">
+		    <img src="Poster_1.png" alt="Mobile App Design" width="100%" height="auto">
+		    <div class="text-block">
+		      <p>Mobile App Design</p>
+		      <h3>Enhancing Student Productivity through Behavioral Change Design</h3>
+		      <h4>The app design aims to <b style="color:#257B35;">boost college admissions</b> by showcasing success stories of students achieving better grades through enhanced productivity.</h4>
+		      <p>Sector: Ed Tech</p>
+		      <a href="Study App Respoonsive.html" target="_self">View Case Study</a>
+		    </div>
+  		</div>
+
+  		<!---------------------Second Project card------------------>
+  		<div class="card">
+		    <img src="Poster_2.png" alt="Website RedesignDesign" width="100%" height="auto">
+		    <div class="text-block">
+		      <p>Website ReDesign</p>
+		      <h3>Increasing Weekly Query Reviews on the Tool</h3>
+		      <h4>The redesign aims to <b style="color:#257B35;">expedite</b> the ML model deployment process by leveraging increased reviews as valuable feedback data</h4>
+		      <p>Sector: Data Science</p>
+		      <a href="Review_Tool_Responsive.html" target="_self">View Case Study</a>
+		    </div>
+  		</div>
+
+  		<!-----------------------Third Project card----------------------->
+  		<div class="card">
+		    <img src="Poster_3.png" alt="Dashboard  Design" width="100%" height="auto">
+		    <div class="text-block">
+		      <p>Dashboard Design</p>
+		      <h3>Designing a dashboard to enhance communication with stakeholders.</h3>
+		      <h4>The dashboard design consolidates all necessary data in one place to facilitate <b style="color:#257B35;">effective communication.</b></h4>
+		      <p>Sector: Data Science</p>
+		      <a href="Dashboard_responsive.html" target="_self">View Case Study</a>
+		    </div>
+  		</div>
+	</section>
+	</div>
+
+	<!----------------Footer section-------------------------------->
+	<div class="footer-container">
+		<footer>
+		    <h3>Let's Connect</h3>
+		    <p>I'd love to hear from you</p>
+
+		    <div class="contact-info">
+		      <div>
+		        <i class="fas fa-phone"></i>
+		        <p>+1 234 567 890</p>
+		      </div>
+		      <div>
+		        <i class="fas fa-envelope"></i>
+		        <p>contact@example.com</p>
+		      </div>
+		    </div>
+
+
+    	<p class="cta">Let's collaborate for success and achieve great things together!</p>
+  	</footer>
+
+  <!-- Font Awesome icons (if you're using them) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	</div>
+
+
+	<div id="mobilePopup">
+    <div id="popupContent">
+      <h2>Best Viewed on Desktop</h2>
+      <p>This portfolio is optimized for desktop viewing. For the best experience, please visit on a larger screen.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+</body>
+
+<style>
+	/*------------------------Typography------------------------------*/
+	h1 {
+		font-family: Merriweather;
+		font-size: 38px;
+		font-weight: 500;
+		color: #0A60CF;
+		margin: 0;
+	}
+
+	h2 {
+		font-family: Merriweather;
+		font-size: 21px;
+		font-weight: 500;
+		color: #000061;
+		margin-top: 15px;
+		line-height: 1.5;
+
+	}
+
+	.card .text-block h3 {
+		font-family: Merriweather;
+		font-size: 20px;
+		font-weight: 600;
+		color: #000061;
+		line-height: 1.5;
+		text-transform: capitalize;
+	}
+
+	.card .text-block h4 {
+		font-family: Merriweather;
+		font-size: 17px;
+		font-weight: 500;
+		color: #000000;
+		line-height: 1.5;
+	}
+
+	.card .text-block p {
+		font-family: Merriweather;
+		font-size: 16px;
+		font-weight: 500;
+		color: #515151;
+		line-height: 1.5;
+		margin:0;
+		text-transform: uppercase;
+	}
+	/*------------------Navigation---------------------------*/
+
+	.Navigation {
+		padding: 0 20px;
+	}
+	 nav {
+            background-color: white; /* White background for navbar */
+            padding-top: 30px;
+            padding-right: 50px; /* Increased horizontal padding */
+                 
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Align the items to the right */
+            gap: 10px; /* Space between the items */
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: #0056D2; /* Dark text for visibility */
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 400;
+            padding: 10px 20px; /* Padding for clickable area */
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #F4F7FA; /* Light background on hover */
+            text-decoration: underline;
+        }
+
+
+	/*-------------------Introduction----------------------------------*/
+	.Introduction-container {
+            padding-left:250px;
+            padding-right: 250px;
+            padding-top: 150px;
+            padding-bottom: 60px;
+            
+        }
+
+      /*-------------------Work Cards----------------------------*/
+      	.work-container {
+            padding-left:250px;
+            padding-right: 250px;
+            padding-bottom: 50px;
+            
+        }
+
+        .card {
+		      display: flex;
+		      /*align-items: left;*/
+		      gap: 30px; /* Adds a good gap between image and text */
+		      width: 1000px; /* Set card width*/
+		      padding: 20px;
+		      border: 1px solid #ccc;
+		      border-radius: 8px;
+		      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		      margin-bottom: 50px;
+		    }
+
+		    .card img {
+		      width: 60%;
+		      height: auto;
+		      border-radius: 4px;
+		    }
+
+		    .card .text-block a {
+		      display: inline-block;
+		      margin-top: 20px;
+		      padding: 10px 20px;
+		      background-color: #0A60CF;
+		      color: white;
+		      text-decoration: none;
+		      border-radius: 4px;
+		      font-size: 18px;
+		    }
+
+		    .card .text-block a:hover {
+		      background-color: #0056b3;
+		    }
+
+		    /*------------------Footer--------------------------*/
+		    .footer-container {
+		    	margin: 0;
+		    	width: 100%;
+		    	padding: 0;
+		    	position: absolute;
+		    }
+
+		    footer {
+		      background-color: #F4F7FA;
+		      color: #0056D2;
+		      padding: 30px;
+		      text-align: center;
+		      font-family: Merriweather;
+		 	  width: 100%;
+		 	  margin: 0;
+		 	  overflow: hidden;
+		 	  box-sizing: border-box;
+		    }
+
+		    footer h3 {
+		      font-size: 24px;
+		      margin-bottom: 10px;
+		    }
+
+		    footer p {
+		      font-size: 16px;
+		      margin-bottom: 20px;
+		    }
+
+		    footer .contact-info {
+		      display: flex;
+		      justify-content: center;
+		      gap: 40px;
+		      margin-bottom: 20px;
+		    }
+
+		    footer .contact-info div {
+		      text-align: center;
+		    }
+
+		    footer .contact-info i {
+		      font-size: 24px;
+		      color: #007BFF;
+		      margin-bottom: 5px;
+		    }
+
+		    footer .social-icons a {
+		      text-decoration: none;
+		      margin: 0 10px;
+		      color: #007BFF;
+		      font-size: 20px;
+		    }
+
+		    footer .social-icons a:hover {
+		      color: #0056b3;
+		    }
+		    
+		    footer .cta {
+		      font-size: 18px;
+		      font-weight: bold;
+		    }
+
+
+		    /* Popup container styling */
+		    #mobilePopup {
+		      display: none; /* Hidden by default */
+		      position: fixed;
+		      top: 0;
+		      left: 0;
+		      width: 100%;
+		      height: 100%;
+		      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+		      color: white;
+		      text-align: center;
+		      z-index: 1000;
+		    }
+
+		    /* Popup content styling */
+		    #popupContent {
+		      position: relative;
+		      top: 50%;
+		      transform: translateY(-50%);
+		      padding: 20px;
+		      background-color: #333;
+		      border-radius: 10px;
+		      display: inline-block;
+		      max-width: 90%;
+		    }
+
+		    #closePopup {
+		      display: block;
+		      margin-top: 15px;
+		      padding: 10px 20px;
+		      background-color: #f04f47;
+		      color: white;
+		      border: none;
+		      border-radius: 5px;
+		      cursor: pointer;
+		    }
+
+		    #closePopup:hover {
+		      background-color: #c03b34;
+		    }
+
+
+
+
+
+       	/*-----------------------------------------------Responsive code-------------------------------------*/
+    	/* Media Queries for responsiveness */
+        @media screen and (max-width: 1200px) {
+
+        	h1 {
+        		font-size: 36px;
+        	}
+
+        	h2 {
+        		font-size: 19px;
+        	}
+        	.card .text-block h3 {
+        		font-size: 18px;
+        	}
+        	.card .text-block h4 {
+        		font-size: 15px;
+        	}
+        	.card .text-block p {
+        		font-size: 14px;
+        	}
+        	/*-------------------Navigation----------------------*/
+        	.Navigation {
+        		padding: 0 20px;
+        	}
+        	nav ul li a {
+        		font-size: 20px;
+        	}
+        	/*-------------------Introduction-------------------------*/
+        	.Introduction-container {
+        		 padding: 0 100px;
+                 padding-top:150px;
+                 padding-bottom: 50px;
+        	}
+        	/*-------------------Work Cards-------------------------*/
+        	.work-container {
+        		 padding: 0 100px;
+                 padding-bottom:50px;
+        	}
+        	.card {
+        		width: calc(100% - 200px);
+        		height: auto;
+        	}
+        	.card img {
+        	  max-width: 100%;
+		      width: 50%;
+		      height: auto;
+		      border-radius: 4px;
+		    
+		    }
+		    .card .text-block a {
+		    	font-size: 16px;
+		    }
+		    /*----------------Footer-------------------------*/
+		    footer h3 {
+		    	font-size: 22px;
+		    }
+		    footer p {
+		    	font-size: 14px;
+		    }
+		    footer .contact-info i {
+		    	font-size: 22px;
+		    }
+		    footer .social-icons a {
+		    	font-size: 18px;
+		    }
+		    footer .cta {
+		    	font-size: 16px;
+		    }
+
+        }
+
+
+
+        @media screen and (max-width: 768px) {
+
+        	h1 {
+        		font-size: 34px;
+        	}
+
+        	h2 {
+        		font-size: 17px;
+        	}
+        	.card .text-block h3 {
+        		font-size: 16px;
+        	}
+        	.card .text-block h4 {
+        		font-size: 13px;
+        	}
+        	.card .text-block p {
+        		font-size: 12px;
+        	}
+        	/*-------------------Navigation----------------------*/
+        	.Navigation {
+        		padding: 0 10px;
+        	}
+        	nav ul li a {
+        		font-size: 18px;
+        	}
+        	/*-------------------Introduction-------------------------*/
+        	.Introduction-container {
+        		 padding: 0 50px;
+                 padding-top:150px;
+                 padding-bottom: 50px;
+        	}
+        	/*-------------------Work Cards-------------------------*/
+        	.work-container {
+        		 padding: 0 50px;
+                 padding-bottom:50px;
+        	}
+        	.card {
+        		width: calc(100% - 100px);
+        		height: auto;
+        		flex-direction: column;
+        	}
+        	.card img {
+		      width: 100%;
+		      height: auto;
+		     
+		    }
+		    .card .text-block a {
+		    	font-size: 14px;
+		    }
+		    /*----------------Footer-------------------------*/
+		    footer h3 {
+		    	font-size: 20px;
+		    }
+		    footer p {
+		    	font-size: 12px;
+		    }
+		    footer .contact-info i {
+		    	font-size: 20px;
+		    }
+		    footer .social-icons a {
+		    	font-size: 16px;
+		    }
+		    footer .cta {
+		    	font-size: 14px;
+		    }
+
+
+        }
+
+
+
+        @media screen and (max-width: 480px) {
+
+        	h1 {
+        		font-size: 32px;
+        	}
+
+        	h2 {
+        		font-size: 14px;
+        		word-wrap: break-word;
+        	}
+        	.card .text-block h3 {
+        		font-size: 14px;
+        	}
+        	.card .text-block h4 {
+        		font-size: 11px;
+        	}
+        	.card .text-block p {
+        		font-size: 11px;
+        	}
+        	/*-------------------Navigation----------------------*/
+        	.Navigation {
+        		padding: 0 10px;
+        	}
+        	nav ul li a {
+        		font-size: 16px;
+        	}
+        	/*-------------------Introduction-------------------------*/
+        	.Introduction-container {
+        		 padding: 0 20px;
+                 padding-top:150px;
+                 padding-bottom: 50px;
+        	}
+        	/*-------------------Work Cards-------------------------*/
+        	.work-container {
+        		 padding: 0 20px;
+                 padding-bottom:50px;
+        	}
+        	.card {
+        		width: calc(100% - 40px);
+        		height: auto;
+        		flex-direction: column;
+        	}
+        	.card img {
+		      width: 100%;
+		      height: auto;
+		     
+		    }
+		    .card .text-block a {
+		    	font-size: 12px;
+		    }
+		    /*----------------Footer-------------------------*/
+		    footer h3 {
+		    	font-size: 18px;
+		    }
+		    footer p {
+		    	font-size: 12px;
+		    }
+		    footer .contact-info i {
+		    	font-size: 18px;
+		    }
+		    footer .social-icons a {
+		    	font-size: 14px;
+		    }
+		    footer .cta {
+		    	font-size: 12px;
+		    }
+
+
+        }
+
+</style>
+
+<script>
+    // Function to check if the device is mobile and show the popup
+    function showMobilePopup() {
+      if (window.innerWidth <= 768) { // Adjust this width as per your needs
+        const popup = document.getElementById('mobilePopup');
+        popup.style.display = 'flex'; // Show the popup
+        popup.style.justifyContent = 'center';
+        popup.style.alignItems = 'center';
+
+        // Close button functionality
+        document.getElementById('closePopup').addEventListener('click', () => {
+          popup.style.display = 'none';
+        });
+      }
+    }
+
+    // Call the function on page load
+    window.onload = showMobilePopup;
+  </script>
